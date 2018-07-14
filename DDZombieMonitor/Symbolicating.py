@@ -143,22 +143,21 @@ def formatZombieInfo(base_path):
     attach_log.close()
 
 
-
+'''
 if __name__ == '__main__':
     formatZombieInfo('/Users/haishengding/Desktop/github/DDZombieMonitor/crash')
+'''
 
 
 '''
 脚本使用方法
-1.把crash_attach.log和Demo.app.dSYM放在一个目录
+1.把crash_attach.log和Demo.app.dSYM放在一个目录，替换脚本中Demo为自己对工程名
 2.把目录DIR传给脚本，符号化完成后在该目录生成zombie_info.log文件
 e.g
 python Symbolicating_Zombie.py '/Users/huya/Documents/work/zombie/crash'
 '''
 
-'''
 if __name__ == '__main__':
     if len(sys.argv) != 2:
         print "please input corrent arg!"
     formatZombieInfo(sys.argv[1])
-'''
