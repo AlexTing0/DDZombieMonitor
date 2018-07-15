@@ -12,7 +12,6 @@
 		104BFDB620FA4297005B511F /* DDThreadStack.mm in Sources */ = {isa = PBXBuildFile; fileRef = 104BFDA820FA4295005B511F /* DDThreadStack.mm */; };
 		104BFDB720FA4297005B511F /* DDZombie.mm in Sources */ = {isa = PBXBuildFile; fileRef = 104BFDA920FA4295005B511F /* DDZombie.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		104BFDB820FA4297005B511F /* DDZombieMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 104BFDAA20FA4295005B511F /* DDZombieMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		104BFDB920FA4297005B511F /* DDZombieDetector+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 104BFDAB20FA4296005B511F /* DDZombieDetector+Private.h */; };
 		104BFDBA20FA4297005B511F /* DDZombieMonitor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 104BFDAC20FA4296005B511F /* DDZombieMonitor.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		104BFDBB20FA4297005B511F /* NSObject+DDZombieDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 104BFDAD20FA4296005B511F /* NSObject+DDZombieDetector.m */; };
 		104BFDBC20FA4297005B511F /* NSObject+DDZombieDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 104BFDAE20FA4296005B511F /* NSObject+DDZombieDetector.h */; };
@@ -23,6 +22,7 @@
 		104BFDC220FA4297005B511F /* DDZombie.h in Headers */ = {isa = PBXBuildFile; fileRef = 104BFDB420FA4297005B511F /* DDZombie.h */; };
 		104BFDC320FA4297005B511F /* DDBinaryImages.h in Headers */ = {isa = PBXBuildFile; fileRef = 104BFDB520FA4297005B511F /* DDBinaryImages.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		104BFDC620FA45CF005B511F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104BFDC520FA45CF005B511F /* UIKit.framework */; };
+		104BFE5320FACA63005B511F /* DDZombieMonitor+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 104BFE5220FACA62005B511F /* DDZombieMonitor+Private.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,6 @@
 		104BFDA820FA4295005B511F /* DDThreadStack.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DDThreadStack.mm; sourceTree = "<group>"; };
 		104BFDA920FA4295005B511F /* DDZombie.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DDZombie.mm; sourceTree = "<group>"; };
 		104BFDAA20FA4295005B511F /* DDZombieMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDZombieMonitor.h; sourceTree = "<group>"; };
-		104BFDAB20FA4296005B511F /* DDZombieDetector+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDZombieDetector+Private.h"; sourceTree = "<group>"; };
 		104BFDAC20FA4296005B511F /* DDZombieMonitor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DDZombieMonitor.mm; sourceTree = "<group>"; };
 		104BFDAD20FA4296005B511F /* NSObject+DDZombieDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DDZombieDetector.m"; sourceTree = "<group>"; };
 		104BFDAE20FA4296005B511F /* NSObject+DDZombieDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DDZombieDetector.h"; sourceTree = "<group>"; };
@@ -55,6 +54,7 @@
 		104BFDB420FA4297005B511F /* DDZombie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDZombie.h; sourceTree = "<group>"; };
 		104BFDB520FA4297005B511F /* DDBinaryImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDBinaryImages.h; sourceTree = "<group>"; };
 		104BFDC520FA45CF005B511F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		104BFE5220FACA62005B511F /* DDZombieMonitor+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDZombieMonitor+Private.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +107,7 @@
 				104BFDA920FA4295005B511F /* DDZombie.mm */,
 				104BFDAA20FA4295005B511F /* DDZombieMonitor.h */,
 				104BFDAC20FA4296005B511F /* DDZombieMonitor.mm */,
-				104BFDAB20FA4296005B511F /* DDZombieDetector+Private.h */,
+				104BFE5220FACA62005B511F /* DDZombieMonitor+Private.h */,
 				104BFDAE20FA4296005B511F /* NSObject+DDZombieDetector.h */,
 				104BFDAD20FA4296005B511F /* NSObject+DDZombieDetector.m */,
 				104BFDAF20FA4296005B511F /* queue.c */,
@@ -147,7 +147,7 @@
 				104BFDC220FA4297005B511F /* DDZombie.h in Headers */,
 				104BFDBE20FA4297005B511F /* queue.h in Headers */,
 				104BFDC020FA4297005B511F /* DDThreadStack.h in Headers */,
-				104BFDB920FA4297005B511F /* DDZombieDetector+Private.h in Headers */,
+				104BFE5320FACA63005B511F /* DDZombieMonitor+Private.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

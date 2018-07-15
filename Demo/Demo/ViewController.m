@@ -61,8 +61,9 @@
     
     UIButton *button = [UIButton new];
     button.backgroundColor = [UIColor redColor];
-    button.frame = CGRectMake(0, 64, 60, 40);
+    button.frame = CGRectMake(0, 64, 100, 40);
     [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
+    [button setTitle:@"触发zombie" forState:UIControlStateNormal];
     [self.view addSubview:button];
     
     ZombieTest *zombieObj = [ZombieTest new];
