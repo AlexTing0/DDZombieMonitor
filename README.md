@@ -1,5 +1,5 @@
 # ZombieMonitor
-自动监控iOS Zombie问题，并且提供Zombie对象类名、selector、释放栈信息，开启监控后对cpu影响很小(不到0.2%)，支持设置组件最大占用内存
+自动监控iOS Zombie问题，并且提供Zombie对象类名、selector、释放栈信息，开启监控后对cpu影响很小(不到0.2%)，支持设置组件最大占用内存，具体介绍请查看[文章](https://github.com/AlexTing0/Monitor_Zombie_in_iOS)
 
 # Features
 - 主动监控Zombie问题，并且提供Zombie对象类名、selector、释放栈信息
