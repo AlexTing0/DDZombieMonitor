@@ -160,6 +160,8 @@ void replaceSelectorWithSelector(Class aCls,
             if (item) {
                 [self freeZombieObject:item];
             }
+        } else {
+            [obj performSelector:@selector(hy_originalDealloc)];
         }
     } else {
         [obj performSelector:@selector(hy_originalDealloc)];
